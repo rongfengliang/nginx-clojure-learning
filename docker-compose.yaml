@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app: 
+     image: dalongrong/nginx-clojure-0.5.3:latest
+     volumes: 
+     - ./nginx.conf:/usr/local/nginx/conf/nginx.conf
+     - ./appjars:/opt/appjars
+     ports:
+     - 80:80
