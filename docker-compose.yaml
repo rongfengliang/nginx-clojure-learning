@@ -7,3 +7,4 @@ services:
      - ./appjars:/opt/appjars
      ports:
      - 80:80
+     - 9090-9099
